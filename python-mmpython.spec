@@ -18,13 +18,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 MMPython is a Media Meta Data retrieval framework. It retrieves
-metadata from mp3, ogg, avi, jpg, tiff and other file formats. Among
+metadata from MP3, Ogg, AVI, JPG, TIFF and other file formats. Among
 others it thereby parses ID3v2, ID3v1, EXIF, IPTC and Vorbis data into
 an object oriented struture.
 
 %description -l pl
 MMPython to szkielet do odczytywania metadanych z multimediów.
-Odtwarza metadane z plików mp3, ogg, avi, jpg, tiff i innych formatów.
+Odtwarza metadane z plików MP3, Ogg, AVI, JPG, TIFF i innych formatów.
 Miêdzy innymi przetwarza dane ID3v2, TD3v1, EXIF, IPTC i Vorbis na
 struktury zorientowane obiektowo.
 
