@@ -9,11 +9,10 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/mmpython/%{module}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/mmpython/
 %pyrequires_eq	python-modules
-BuildRequires:	glib-devel
+BuildRequires:	libdvdread-devel
 BuildRequires:	python >= 2.2.1
-BuildRequires:	rpm-pythonprov
 BuildRequires:	python-devel
-BuildRequires:	pkgconfig
+BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
