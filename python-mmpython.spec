@@ -2,12 +2,12 @@
 Summary:	Media Metadata for Python
 Summary(pl):	Metadane multimedialne dla Pythona
 Name:		python-%{module}
-Version:	0.4.6
+Version:	0.4.7
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/mmpython/%{module}-%{version}.tar.gz
-# Source0-md5:	237616e996811992accbbed8eb715ac5
+# Source0-md5:	fbd0fb7bc855e0b9f31485c9f9c256a7
 URL:		http://sourceforge.net/projects/mmpython/
 %pyrequires_eq	python-modules
 BuildRequires:	libdvdread-devel
