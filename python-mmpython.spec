@@ -13,7 +13,6 @@ URL:		http://sourceforge.net/projects/mmpython/
 BuildRequires:	libdvdread-devel
 BuildRequires:	python >= 2.2.1
 BuildRequires:	python-devel
-BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
