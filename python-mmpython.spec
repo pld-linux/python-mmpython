@@ -40,7 +40,11 @@ rm -rf $RPM_BUILD_ROOT
 
 python setup.py install \
 	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+	--root=$RPM_BUILD_ROOT \
+	--install-platlib=%{py_sitescriptdir} \
+	--install-purelib=%{py_sitedir}
+
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*py -exec rm -f \{\} \;
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{py_sitedir}/%{module}
+%{py_sitescriptdir}/%{module}
