@@ -2,17 +2,17 @@
 Summary:	Media Metadata for Python
 Summary(pl):	Metadane multimedialne dla Pythona
 Name:		python-%{module}
-Version:	0.4.8
+Version:	0.4.9
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/mmpython/%{module}-%{version}.tar.gz
-# Source0-md5:	0612629407e3e20b95eaff1e4ceebd65
+# Source0-md5:	f95699c2f4249d21105d7977a15d5dcc
 URL:		http://sourceforge.net/projects/mmpython/
 BuildRequires:	libdvdread-devel
-BuildRequires:	python >= 2.2.1
 BuildRequires:	python-devel
-BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,10 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 python setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT \
-	--install-platlib=%{py_sitescriptdir} \
-	--install-purelib=%{py_sitedir}
+	--install-platlib=%{py_sitescriptdir}
 
-find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*py -exec rm -f \{\} \;
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
