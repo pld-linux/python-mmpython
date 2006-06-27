@@ -1,0 +1,10 @@
+--- mmpython-0.4.9/disc/ifomodule.c.orig	2004-07-17 10:46:52.000000000 +0200
++++ mmpython-0.4.9/disc/ifomodule.c	2006-06-27 02:06:43.519617000 +0200
+@@ -8,6 +8,7 @@
+ #include <string.h>
+ #include <unistd.h>
+ #include <assert.h>
++#include <stdint.h>
+ 
+ #include <dvdread/dvd_reader.h>
+ #include <dvdread/ifo_types.h>
