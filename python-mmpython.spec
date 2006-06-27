@@ -8,12 +8,14 @@ License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/mmpython/%{module}-%{version}.tar.gz
 # Source0-md5:	f95699c2f4249d21105d7977a15d5dcc
+Patch0:		%{name}-intypes.patch
 URL:		http://sourceforge.net/projects/mmpython/
 BuildRequires:	libdvdread-devel
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
+Requires:	python-PyXML
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,6 +32,7 @@ struktury zorientowane obiektowo.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags}" \
