@@ -1,6 +1,6 @@
 %define		module	mmpython
 Summary:	Media Metadata for Python
-Summary(pl):	Metadane multimedialne dla Pythona
+Summary(pl.UTF-8):   Metadane multimedialne dla Pythona
 Name:		python-%{module}
 Version:	0.4.9
 Release:	1
@@ -24,10 +24,10 @@ metadata from MP3, Ogg, AVI, JPG, TIFF and other file formats. Among
 others it thereby parses ID3v2, ID3v1, EXIF, IPTC and Vorbis data into
 an object oriented struture.
 
-%description -l pl
-MMPython to szkielet do odczytywania metadanych z multimediów.
-Odtwarza metadane z plików MP3, Ogg, AVI, JPG, TIFF i innych formatów.
-Miêdzy innymi przetwarza dane ID3v2, TD3v1, EXIF, IPTC i Vorbis na
+%description -l pl.UTF-8
+MMPython to szkielet do odczytywania metadanych z multimediÃ³w.
+Odtwarza metadane z plikÃ³w MP3, Ogg, AVI, JPG, TIFF i innych formatÃ³w.
+MiÄ™dzy innymi przetwarza dane ID3v2, TD3v1, EXIF, IPTC i Vorbis na
 struktury zorientowane obiektowo.
 
 %prep
