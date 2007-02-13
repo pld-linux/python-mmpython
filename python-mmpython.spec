@@ -1,6 +1,6 @@
 %define		module	mmpython
 Summary:	Media Metadata for Python
-Summary(pl.UTF-8):   Metadane multimedialne dla Pythona
+Summary(pl.UTF-8):	Metadane multimedialne dla Pythona
 Name:		python-%{module}
 Version:	0.4.9
 Release:	1
