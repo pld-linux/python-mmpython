@@ -3,7 +3,7 @@ Summary:	Media Metadata for Python
 Summary(pl.UTF-8):	Metadane multimedialne dla Pythona
 Name:		python-%{module}
 Version:	0.4.9
-Release:	6
+Release:	7
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/mmpython/%{module}-%{version}.tar.gz
